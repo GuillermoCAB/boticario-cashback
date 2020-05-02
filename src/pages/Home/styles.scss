@@ -1,0 +1,178 @@
+@import '../../assets/style/colors';
+
+.homeWrapper {
+    box-sizing: border-box;
+    background-color: $grayLight;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media screen and (max-width: 35.5em) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+    }
+
+    .homeContainer {
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px 4%;
+
+        @media screen and (max-width: 35.5em) {
+            padding: 10px 0 0 0;
+        }
+
+        .mainLogo {
+            width: 25%;
+            margin: 1% 0;
+            max-width: 300px;
+
+            @media screen and (max-width: 35.5em) {
+                width: 50%;
+                margin: 3% 0;
+            }
+        }
+
+        .headerRow {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            min-height: 50px;
+            margin: 0;
+
+            @media screen and (max-width: 35.5em) {
+                flex-direction: column;
+            }
+
+            .title {
+                font-size: 24px;
+                margin: 0;
+
+                @media screen and (max-width: 35.5em) {
+                    margin: 20px;
+                }
+            }
+
+            .clipBtn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0px;
+                background-color: $primary;
+                color: $white;
+                border: none;
+                width: 200px;
+                max-width: 50%;
+                padding: 10px 0;
+                outline: none;
+                transition: opacity ease-out 1s;
+                transition: transform ease-out 0.5s;
+
+                .btnIcon {
+                    margin-right: 5px;
+
+                    @media screen and (max-width: 35.5em) {
+                        font-size: 12px;
+                    }
+                }
+
+                @media screen and (max-width: 35.5em) {
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin: 20px;
+                }
+            
+                &:hover {
+                    opacity: 0.8;
+                }
+            
+                &:active {
+                    transform: scale(0.95,0.9);
+                }
+            
+            
+            }
+        }
+
+        .sortRow {
+            z-index: 1;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            min-height: 50px;
+            margin: 20px 0 0;
+            padding: 10px 20px;
+            background-color: $white;
+            box-shadow: 3px 3px 20px 1px #e2e0e0;
+
+            @media screen and (max-width: 35.5em) {
+                flex-direction: column-reverse;
+                height: auto;
+            }
+
+
+            .order {
+                display: flex;
+                padding: 5px;
+                box-sizing: border-box;
+
+                @media screen and (max-width: 35.5em) {
+                    margin-top: 10px;
+                }
+
+                #orderSelect {
+                    background-color: transparent;
+                    border: none;
+                    width: auto;
+                    -moz-appearance:none;
+                    -webkit-appearance:none;
+                    appearance:none;
+                    padding: 0 10px;
+                    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+                    background-repeat: no-repeat;
+                    background-position-x: 100%;
+                    background-position-y: -3px;
+                    border: 1px solid transparent;
+                    outline: none;
+                    padding: 0 25px 0 5px;
+                    margin-left: 2px;
+
+                    &:hover {
+                        cursor: pointer;
+                        border: 1px solid $grayLight;
+                    }
+                }
+
+                .sortIcon {
+                    margin-right: 5px;
+                }
+                .caretIcon {
+                    padding-top: 3px;
+                    margin-left: 5px;
+                }
+            }
+
+            p {
+                font-size: 18px;
+                margin: 0;
+            }
+
+        }
+
+    }
+}

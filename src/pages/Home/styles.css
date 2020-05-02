@@ -1,0 +1,255 @@
+.homeWrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f2f2f6;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media screen and (max-width: 35.5em) {
+  .homeWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+  }
+}
+
+.homeWrapper .homeContainer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 4%;
+}
+
+@media screen and (max-width: 35.5em) {
+  .homeWrapper .homeContainer {
+    padding: 10px 0 0 0;
+  }
+}
+
+.homeWrapper .homeContainer .mainLogo {
+  width: 25%;
+  margin: 1% 0;
+  max-width: 300px;
+}
+
+@media screen and (max-width: 35.5em) {
+  .homeWrapper .homeContainer .mainLogo {
+    width: 50%;
+    margin: 3% 0;
+  }
+}
+
+.homeWrapper .homeContainer .headerRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 50px;
+  margin: 0;
+}
+
+@media screen and (max-width: 35.5em) {
+  .homeWrapper .homeContainer .headerRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.homeWrapper .homeContainer .headerRow .title {
+  font-size: 24px;
+  margin: 0;
+}
+
+@media screen and (max-width: 35.5em) {
+  .homeWrapper .homeContainer .headerRow .title {
+    margin: 20px;
+  }
+}
+
+.homeWrapper .homeContainer .headerRow .clipBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px;
+  background-color: #6fa287;
+  color: #fff;
+  border: none;
+  width: 200px;
+  max-width: 50%;
+  padding: 10px 0;
+  outline: none;
+  -webkit-transition: opacity ease-out 1s;
+  transition: opacity ease-out 1s;
+  -webkit-transition: -webkit-transform ease-out 0.5s;
+  transition: -webkit-transform ease-out 0.5s;
+  transition: transform ease-out 0.5s;
+  transition: transform ease-out 0.5s, -webkit-transform ease-out 0.5s;
+}
+
+.homeWrapper .homeContainer .headerRow .clipBtn .btnIcon {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 35.5em) {
+  .homeWrapper .homeContainer .headerRow .clipBtn .btnIcon {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 35.5em) {
+  .homeWrapper .homeContainer .headerRow .clipBtn {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 20px;
+  }
+}
+
+.homeWrapper .homeContainer .headerRow .clipBtn:hover {
+  opacity: 0.8;
+}
+
+.homeWrapper .homeContainer .headerRow .clipBtn:active {
+  -webkit-transform: scale(0.95, 0.9);
+          transform: scale(0.95, 0.9);
+}
+
+.homeWrapper .homeContainer .sortRow {
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 50px;
+  margin: 20px 0 0;
+  padding: 10px 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 3px 3px 20px 1px #e2e0e0;
+          box-shadow: 3px 3px 20px 1px #e2e0e0;
+}
+
+@media screen and (max-width: 35.5em) {
+  .homeWrapper .homeContainer .sortRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: auto;
+  }
+}
+
+.homeWrapper .homeContainer .sortRow .order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 35.5em) {
+  .homeWrapper .homeContainer .sortRow .order {
+    margin-top: 10px;
+  }
+}
+
+.homeWrapper .homeContainer .sortRow .order #orderSelect {
+  background-color: transparent;
+  border: none;
+  width: auto;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0 10px;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: -3px;
+  border: 1px solid transparent;
+  outline: none;
+  padding: 0 25px 0 5px;
+  margin-left: 2px;
+}
+
+.homeWrapper .homeContainer .sortRow .order #orderSelect:hover {
+  cursor: pointer;
+  border: 1px solid #f2f2f6;
+}
+
+.homeWrapper .homeContainer .sortRow .order .sortIcon {
+  margin-right: 5px;
+}
+
+.homeWrapper .homeContainer .sortRow .order .caretIcon {
+  padding-top: 3px;
+  margin-left: 5px;
+}
+
+.homeWrapper .homeContainer .sortRow p {
+  font-size: 18px;
+  margin: 0;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,90 @@
+.inputWrapper {
+  position: relative;
+  padding: 15px 0 0;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.regularInput {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #6fa287;
+  padding: 7px 40px 7px 0;
+  background: transparent;
+  -webkit-transition: border-color 0.7s;
+  transition: border-color 0.7s;
+}
+
+.regularInput::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.regularInput:-ms-input-placeholder {
+  color: transparent;
+}
+
+.regularInput::-ms-input-placeholder {
+  color: transparent;
+}
+
+.regularInput::placeholder {
+  color: transparent;
+}
+
+.regularInput:placeholder-shown ~ .inputLabel {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.inputLabel {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.regularInput:focus, .regularInput:valid {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-bottom: 2px solid #6fa287;
+}
+
+.regularInput:focus ~ .inputLabel, .regularInput:valid ~ .inputLabel {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #6fa287;
+  font-weight: 700;
+}
+
+/* reset input */
+.regularInput:required, .regularInput:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.inputIcon {
+  position: absolute;
+  top: 25px;
+  right: 8px;
+  color: #9b9b9b;
+}
+
+.inputIcon:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */

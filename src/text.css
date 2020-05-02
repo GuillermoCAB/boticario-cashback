@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Effra;
+    src: url(./assets/fonts/Effra_Std_Rg.ttf);
+}
+
+*, button {
+    font-family: Effra, sans-serif;
+}

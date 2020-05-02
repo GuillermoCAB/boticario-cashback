@@ -1,0 +1,40 @@
+.gooBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  width: 120px;
+  border: none;
+  padding: 5px 12px;
+  background-color: #de5246;
+  outline: none;
+  -webkit-transition: opacity ease-out 1s;
+  transition: opacity ease-out 1s;
+  -webkit-transition: -webkit-transform ease-out 0.5s;
+  transition: -webkit-transform ease-out 0.5s;
+  transition: transform ease-out 0.5s;
+  transition: transform ease-out 0.5s, -webkit-transform ease-out 0.5s;
+  margin: 10px;
+}
+
+.gooBtn:hover {
+  opacity: 0.8;
+}
+
+.gooBtn:active {
+  -webkit-transform: scale(0.95, 0.9);
+          transform: scale(0.95, 0.9);
+}
+
+.gooBtn .icon {
+  position: relative;
+  color: #fff;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=styles.css.map */

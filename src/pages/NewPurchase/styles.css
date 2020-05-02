@@ -1,0 +1,278 @@
+.clip {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 4%;
+  z-index: 2;
+  right: 0;
+  width: 90%;
+  min-width: calc(100vw - 50px);
+  height: 100vh;
+  position: absolute;
+  background-color: #6fa287;
+  border-left: 1px solid #fff;
+  -webkit-clip-path: inset(0% 0% 100% 100%);
+          clip-path: inset(0% 0% 100% 100%);
+  -webkit-transition: all ease-in 1s;
+  transition: all ease-in 1s;
+}
+
+@media screen and (max-width: 35.5em) {
+  .clip {
+    height: auto;
+    width: 100%;
+    margin-top: 40px;
+    border-top: 1px solid #fff;
+    border-left: none;
+  }
+}
+
+.clip .purchaseLogo {
+  width: 25%;
+  margin: 1% 0;
+  max-width: 300px;
+}
+
+@media screen and (max-width: 35.5em) {
+  .clip .purchaseLogo {
+    width: 50%;
+    margin: 3% 0;
+  }
+}
+
+.clip .headerRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 50px;
+  margin: 0;
+}
+
+@media screen and (max-width: 35.5em) {
+  .clip .headerRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.clip .headerRow .title {
+  font-size: 24px;
+  color: #fff;
+  margin: 0px;
+}
+
+@media screen and (max-width: 35.5em) {
+  .clip .headerRow .title {
+    margin: 20px;
+  }
+}
+
+.clip .headerRow .clipBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px;
+  background-color: #fff;
+  color: #6fa287;
+  border: none;
+  width: 200px;
+  max-width: 50%;
+  padding: 10px 0;
+  outline: none;
+  -webkit-transition: opacity ease-out 1s;
+  transition: opacity ease-out 1s;
+  -webkit-transition: -webkit-transform ease-out 0.5s;
+  transition: -webkit-transform ease-out 0.5s;
+  transition: transform ease-out 0.5s;
+  transition: transform ease-out 0.5s, -webkit-transform ease-out 0.5s;
+}
+
+@media screen and (max-width: 35.5em) {
+  .clip .headerRow .clipBtn {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 20px;
+  }
+}
+
+.clip .headerRow .clipBtn:hover {
+  opacity: 0.8;
+}
+
+.clip .headerRow .clipBtn:active {
+  -webkit-transform: scale(0.95, 0.9);
+          transform: scale(0.95, 0.9);
+}
+
+.clip .headerRow .clipBtn .btnIcon {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 35.5em) {
+  .clip .headerRow .clipBtn .btnIcon {
+    font-size: 12px;
+  }
+}
+
+.clip .box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 100px;
+  width: 40%;
+  min-width: 400px;
+  height: auto;
+  min-height: 575px;
+  border: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  color: #fff;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 35.5em) {
+  .clip .box {
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+  }
+}
+
+.clip .box .boxLoader {
+  margin: auto;
+}
+
+.clip .box #purchaseWarnUser {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #992424;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+  margin: 10px 0;
+}
+
+.clip .box #purchaseWarnUser #warnUserText {
+  margin: 0;
+  font-size: 16px;
+  min-height: 20px;
+}
+
+.clip .box #purchaseWarnUser #warnBtn {
+  background-color: transparent;
+  color: #992424;
+  border: none;
+  display: none;
+  font-size: 14px;
+}
+
+.clip .box .boxBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+  background-color: #fff;
+  color: #6fa287;
+  border: none;
+  width: 200px;
+  max-width: 50%;
+  padding: 10px 0;
+  outline: none;
+  -webkit-transition: opacity ease-out 1s;
+  transition: opacity ease-out 1s;
+  -webkit-transition: -webkit-transform ease-out 0.5s;
+  transition: -webkit-transform ease-out 0.5s;
+  transition: transform ease-out 0.5s;
+  transition: transform ease-out 0.5s, -webkit-transform ease-out 0.5s;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 35.5em) {
+  .clip .box .boxBtn {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.clip .box .boxBtn:hover {
+  opacity: 0.8;
+}
+
+.clip .box .boxBtn:active {
+  -webkit-transform: scale(0.95, 0.9);
+          transform: scale(0.95, 0.9);
+}
+
+.clip .box .boxBtn .btnIcon {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 35.5em) {
+  .clip .box .boxBtn .btnIcon {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

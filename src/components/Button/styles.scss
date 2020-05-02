@@ -1,0 +1,28 @@
+@import '../../assets/style/colors';
+
+.btn {
+    margin: 20px;
+    background-color: $primary;
+    color: $white;
+    border: none;
+    width: 200px;
+    max-width: 50%;
+    padding: 10px 0;
+    outline: none;
+    transition: opacity ease-out 1s;
+    transition: transform ease-out 0.5s;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        transform: scale(0.95,0.9);
+    }
+
+    .loaderIcon {
+        max-height: 15px;
+    }
+
+
+}

@@ -1,0 +1,58 @@
+@import '../../assets/style/colors';
+
+.paginationWrapper {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 40px;
+    background-color: $white;
+    padding: 10px;
+    box-shadow: 3px 3px 20px 1px #e2e0e0;
+
+    p {
+        margin: 0;
+    }
+
+    @media screen and (max-width: 35.5em) {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .info {
+        @media screen and (max-width: 35.5em) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 8px;
+        }
+    }
+
+    .pages {
+        @media screen and (max-width: 35.5em) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            color: #707070;
+
+            &:hover {
+                opacity: 0.5;
+            }
+
+            &.actualPage {
+                color: #202020;
+                
+                &:hover {
+                    cursor: default;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

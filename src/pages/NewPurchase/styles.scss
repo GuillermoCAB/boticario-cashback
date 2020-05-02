@@ -1,0 +1,200 @@
+@import '../../assets/style/colors';
+
+    .clip {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px 4%;
+        z-index: 2;
+        right: 0;
+        width: 90%;
+        min-width: calc(100vw - 50px);
+        height: 100vh;
+        position: absolute;
+        background-color: $primary;
+        border-left: 1px solid $white;
+        clip-path: inset(0% 0% 100% 100%);
+        transition: all ease-in 1s;
+
+        @media screen and (max-width: 35.5em) {
+            height: auto;
+            width: 100%;
+            margin-top: 40px;
+            border-top: 1px solid $white;
+            border-left: none;
+        }
+
+        .purchaseLogo {
+            width: 25%;
+            margin: 1% 0;
+            max-width: 300px;
+
+            @media screen and (max-width: 35.5em) {
+                width: 50%;
+                margin: 3% 0;
+            }
+        }
+
+        .headerRow {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            min-height: 50px;
+            margin: 0;
+
+            @media screen and (max-width: 35.5em) {
+                flex-direction: column;
+            }
+
+            .title {
+                font-size: 24px;
+                color: $white;
+                margin: 0px;
+
+                @media screen and (max-width: 35.5em) {
+                    margin: 20px;
+                }
+            }
+
+            .clipBtn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0px;
+                background-color: $white;
+                color: $primary;
+                border: none;
+                width: 200px;
+                max-width: 50%;
+                padding: 10px 0;
+                outline: none;
+                transition: opacity ease-out 1s;
+                transition: transform ease-out 0.5s;
+
+                @media screen and (max-width: 35.5em) {
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin: 20px;
+                }
+            
+                &:hover {
+                    opacity: 0.8;
+                }
+            
+                &:active {
+                    transform: scale(0.95,0.9);
+                }
+
+                .btnIcon {
+                    margin-right: 5px;
+
+                    @media screen and (max-width: 35.5em) {
+                        font-size: 12px;
+                    }
+                }
+            
+            
+            }
+        }
+
+        .box {
+            box-sizing: border-box;
+            margin-top: 100px;
+            width: 40%;
+            min-width: 400px;
+            height: auto;
+            min-height: 575px;
+            border: 1px solid $white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px;
+            color: $white;
+            font-size: 20px;
+
+            @media screen and (max-width: 35.5em) {
+                width: 100%;
+                min-width: 100%;
+                height: auto;
+            }
+            
+            .boxLoader {
+                margin: auto;
+            }
+
+            #purchaseWarnUser {
+                display: flex;
+                justify-content: space-between !important;
+                align-items: center;
+                color: rgb(153, 36, 36);
+                box-sizing: border-box;
+                font-weight: bold;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                background-color: transparent;
+                margin: 10px 0;
+
+                #warnUserText {
+                    margin: 0;
+                    font-size: 16px;
+                    min-height: 20px;
+                }
+
+                #warnBtn {
+                    background-color: transparent;
+                    color: rgb(153, 36, 36);
+                    border: none;
+                    display: none;
+                    font-size: 14px;
+                }
+            }
+
+            .boxBtn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 10px;
+                background-color: $white;
+                color: $primary;
+                border: none;
+                width: 200px;
+                max-width: 50%;
+                padding: 10px 0;
+                outline: none;
+                transition: opacity ease-out 1s;
+                transition: transform ease-out 0.5s;
+                margin-top: 40px;
+
+                @media screen and (max-width: 35.5em) {
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+            
+                &:hover {
+                    opacity: 0.8;
+                }
+            
+                &:active {
+                    transform: scale(0.95,0.9);
+                }
+
+                .btnIcon {
+                    margin-right: 5px;
+
+                    @media screen and (max-width: 35.5em) {
+                        font-size: 12px;
+                    }
+                }
+            
+            
+            }
+        }
+    }

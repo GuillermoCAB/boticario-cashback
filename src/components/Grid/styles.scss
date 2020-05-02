@@ -1,0 +1,121 @@
+@import '../../assets/style/colors';
+
+#gridLoader {
+    margin-top: 15%;
+}
+
+.gridWrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 20px 10px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 35.5em) {
+        justify-content: center;
+    }
+
+    .gridItem {
+        box-sizing: border-box;
+        width: 21%;
+        height: 200px;
+        background-color: $white;
+        margin: 10px 0;
+        border: 1px solid #dddddd;
+        padding: 15px 10px;
+        color: rgb(54, 50, 50);
+        box-shadow: 3px 3px 10px 1px #e2e0e0;
+
+        @media screen and (max-width: 35.5em) {
+            width: 80%;
+            height: 185px;
+        }
+
+        .itemHeader {
+            box-sizing: border-box;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+
+            .statusRow {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 60%;
+
+                .itemStatusBox {
+                    box-sizing: border-box;
+                    width: 55%;
+                    max-width: 70px;
+                    padding: 2px;   
+                    border-radius: 5px;
+                    margin-left: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;   
+                    
+                    &.yellow {
+                        background-color: rgb(215, 221, 106);
+                    } 
+                    
+                    &.green {
+                        background-color: rgb(107, 194, 107);
+                    } 
+                    
+                    &.red {
+                        background-color: rgb(209, 141, 141);
+                    }
+                }  
+            }
+    
+            p {
+                margin: 0;
+            }
+        }
+
+        .itemRow {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            p {
+                margin: 25px 0 0px;
+                font-size: 12px;
+
+                @media screen and (max-width: 35.5em) {
+                    margin: 10px 0 0px;
+                }
+            }
+
+            .itemCode {
+                font-size: 10px;
+                margin: 0;
+            }
+        }
+
+        .cashbackRow {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 35px;
+
+            p {
+                margin: 0;
+                font-size: 22px;
+                font-weight: bold;
+            }
+        }
+    }
+
+}

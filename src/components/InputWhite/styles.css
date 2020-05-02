@@ -1,0 +1,90 @@
+.inputWhiteWrapper {
+  position: relative;
+  padding: 15px 0 0;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.regularInputWhite {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #cecdcdc7;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 40px 7px 0;
+  background: transparent;
+  -webkit-transition: border-color 0.7s;
+  transition: border-color 0.7s;
+}
+
+.regularInputWhite::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.regularInputWhite:-ms-input-placeholder {
+  color: transparent;
+}
+
+.regularInputWhite::-ms-input-placeholder {
+  color: transparent;
+}
+
+.regularInputWhite::placeholder {
+  color: transparent;
+}
+
+.regularInputWhite:placeholder-shown ~ .inputWhiteLabel {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.inputWhiteLabel {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #cecdcdc7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.regularInputWhite:focus, .regularInputWhite:valid {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-bottom: 2px solid #fff;
+}
+
+.regularInputWhite:focus ~ .inputWhiteLabel, .regularInputWhite:valid ~ .inputWhiteLabel {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* reset inputWhite */
+.regularInputWhite:required, .regularInputWhite:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.inputWhiteIcon {
+  position: absolute;
+  top: 25px;
+  right: 8px;
+  color: #fff;
+}
+
+.inputWhiteIcon:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */

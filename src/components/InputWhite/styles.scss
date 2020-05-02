@@ -1,0 +1,73 @@
+@import '../../assets/style/colors';
+
+.inputWhiteWrapper {
+  position: relative;
+  padding: 15px 0 0;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.regularInputWhite {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid $grayish;
+  outline: 0;
+  font-size: 1.3rem;
+  color: $white;
+  padding: 7px 40px 7px 0;
+  background: transparent;
+  transition: border-color 0.7s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .inputWhiteLabel {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.inputWhiteLabel {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: $grayish;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.regularInputWhite:focus, .regularInputWhite:valid {
+  ~ .inputWhiteLabel {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $white;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-bottom: 2px solid $white;
+}
+
+/* reset inputWhite */
+.regularInputWhite{
+  &:required,&:invalid { box-shadow:none; }
+}
+
+.inputWhiteIcon {
+  position: absolute;
+  top: 25px;
+  right: 8px;
+  color: $white;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

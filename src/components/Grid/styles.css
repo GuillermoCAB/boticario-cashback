@@ -1,0 +1,171 @@
+#gridLoader {
+  margin-top: 15%;
+}
+
+.gridWrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: transparent;
+  padding: 20px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 35.5em) {
+  .gridWrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.gridWrapper .gridItem {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 21%;
+  height: 200px;
+  background-color: #fff;
+  margin: 10px 0;
+  border: 1px solid #dddddd;
+  padding: 15px 10px;
+  color: #363232;
+  -webkit-box-shadow: 3px 3px 10px 1px #e2e0e0;
+          box-shadow: 3px 3px 10px 1px #e2e0e0;
+}
+
+@media screen and (max-width: 35.5em) {
+  .gridWrapper .gridItem {
+    width: 80%;
+    height: 185px;
+  }
+}
+
+.gridWrapper .gridItem .itemHeader {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+}
+
+.gridWrapper .gridItem .itemHeader .statusRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+}
+
+.gridWrapper .gridItem .itemHeader .statusRow .itemStatusBox {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 55%;
+  max-width: 70px;
+  padding: 2px;
+  border-radius: 5px;
+  margin-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gridWrapper .gridItem .itemHeader .statusRow .itemStatusBox.yellow {
+  background-color: #d7dd6a;
+}
+
+.gridWrapper .gridItem .itemHeader .statusRow .itemStatusBox.green {
+  background-color: #6bc26b;
+}
+
+.gridWrapper .gridItem .itemHeader .statusRow .itemStatusBox.red {
+  background-color: #d18d8d;
+}
+
+.gridWrapper .gridItem .itemHeader p {
+  margin: 0;
+}
+
+.gridWrapper .gridItem .itemRow {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gridWrapper .gridItem .itemRow p {
+  margin: 25px 0 0px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 35.5em) {
+  .gridWrapper .gridItem .itemRow p {
+    margin: 10px 0 0px;
+  }
+}
+
+.gridWrapper .gridItem .itemRow .itemCode {
+  font-size: 10px;
+  margin: 0;
+}
+
+.gridWrapper .gridItem .cashbackRow {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
+}
+
+.gridWrapper .gridItem .cashbackRow p {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=styles.css.map */

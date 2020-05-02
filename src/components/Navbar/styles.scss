@@ -1,0 +1,89 @@
+@import '../../assets/style/colors';
+
+.navbarWrapper {
+    height: 100%;
+    box-sizing: border-box;
+    background-color: $primary;
+    min-height: 100vh;
+    max-width: 50px;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 5px;
+
+    @media screen and (max-width: 35.5em) {
+        width: 100%;
+        min-width: 100%;
+        height: 50px;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 40px;
+    }
+
+    .userImg {
+        width: 50%;
+        height: auto;
+        padding: 10px 0;
+        border-bottom: 1px solid #bebebe90;
+
+        @media screen and (max-width: 35.5em) {
+            width: 8%;
+            height: auto;
+            border-left: 1px solid #bebebe90;
+            border-bottom: none;
+            margin: 10px;
+            padding: 0 10px;
+        }
+    }
+
+    .iconContainer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        margin: 2px 0;
+
+        @media screen and (max-width: 35.5em) {
+            width: 10%;
+            height: auto;
+            margin: 10px;
+            padding: 0;
+            margin: 5px;
+        }
+    
+        &:hover {
+            background-color: $primaryDark;
+        }
+    
+        &.selected {
+            @media screen and (min-width: 35.5em) {
+                background-color: $primaryDark;
+            }
+        }
+        
+        &:active > .navIcon {
+            transform: scale(0.8,0.8);
+        }
+
+        .navIcon {
+            color: $white;
+            width: 50%;
+            height: auto;
+            transition: transform ease-out 0.5s;
+
+            @media screen and (max-width: 35.5em) {
+                width: 70%;
+                height: auto;
+                padding: 5px 0;
+            }
+        }
+    }
+}
